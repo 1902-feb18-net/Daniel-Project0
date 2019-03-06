@@ -1,0 +1,12 @@
+C:\Revature\Daniel-Code\RedRobin\RedRobin.DataAccess\bin\Debug\netcoreapp2.2\RedRobin.DataAccess.deps.json
+C:\Revature\Daniel-Code\RedRobin\RedRobin.DataAccess\bin\Debug\netcoreapp2.2\RedRobin.DataAccess.dll
+C:\Revature\Daniel-Code\RedRobin\RedRobin.DataAccess\obj\Debug\netcoreapp2.2\RedRobin.DataAccess.csproj.CoreCompileInputs.cache
+C:\Revature\Daniel-Code\RedRobin\RedRobin.DataAccess\obj\Debug\netcoreapp2.2\RedRobin.DataAccess.AssemblyInfoInputs.cache
+C:\Revature\Daniel-Code\RedRobin\RedRobin.DataAccess\obj\Debug\netcoreapp2.2\RedRobin.DataAccess.AssemblyInfo.cs
+C:\Revature\Daniel-Code\RedRobin\RedRobin.DataAccess\bin\Debug\netcoreapp2.2\RedRobin.DataAccess.pdb
+C:\Revature\Daniel-Code\RedRobin\RedRobin.DataAccess\obj\Debug\netcoreapp2.2\RedRobin.DataAccess.csprojAssemblyReference.cache
+C:\Revature\Daniel-Code\RedRobin\RedRobin.DataAccess\obj\Debug\netcoreapp2.2\RedRobin.DataAccess.dll
+C:\Revature\Daniel-Code\RedRobin\RedRobin.DataAccess\obj\Debug\netcoreapp2.2\RedRobin.DataAccess.pdb
+C:\Revature\Daniel-Code\RedRobin\RedRobin.DataAccess\bin\Debug\netcoreapp2.2\RedRobin.Library.dll
+C:\Revature\Daniel-Code\RedRobin\RedRobin.DataAccess\bin\Debug\netcoreapp2.2\RedRobin.Library.pdb
+C:\Revature\Daniel-Code\RedRobin\RedRobin.DataAccess\obj\Debug\netcoreapp2.2\RedRobin.DataAccess.csproj.CopyComplete

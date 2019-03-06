@@ -1,0 +1,11 @@
+C:\Revature\Daniel-Code\RedRobin\RedRobin.Library\bin\Debug\netcoreapp2.2\RedRobin.Library.deps.json
+C:\Revature\Daniel-Code\RedRobin\RedRobin.Library\bin\Debug\netcoreapp2.2\RedRobin.Library.dll
+C:\Revature\Daniel-Code\RedRobin\RedRobin.Library\bin\Debug\netcoreapp2.2\RedRobin.Library.pdb
+C:\Revature\Daniel-Code\RedRobin\RedRobin.Library\obj\Debug\netcoreapp2.2\RedRobin.Library.csproj.CoreCompileInputs.cache
+C:\Revature\Daniel-Code\RedRobin\RedRobin.Library\obj\Debug\netcoreapp2.2\RedRobin.Library.AssemblyInfoInputs.cache
+C:\Revature\Daniel-Code\RedRobin\RedRobin.Library\obj\Debug\netcoreapp2.2\RedRobin.Library.AssemblyInfo.cs
+C:\Revature\Daniel-Code\RedRobin\RedRobin.Library\obj\Debug\netcoreapp2.2\RedRobin.Library.dll
+C:\Revature\Daniel-Code\RedRobin\RedRobin.Library\obj\Debug\netcoreapp2.2\RedRobin.Library.pdb
+C:\Revature\Daniel-Code\RedRobin\RedRobin.Library\bin\Debug\netcoreapp2.2\RedRobin.Library.runtimeconfig.json
+C:\Revature\Daniel-Code\RedRobin\RedRobin.Library\bin\Debug\netcoreapp2.2\RedRobin.Library.runtimeconfig.dev.json
+C:\Revature\Daniel-Code\RedRobin\RedRobin.Library\obj\Debug\netcoreapp2.2\RedRobin.Library.csprojAssemblyReference.cache
