@@ -3806,11 +3806,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Revature\\Daniel-Code\\RedRobin\\RedRobin.ConsoleApp\\RedRobin.ConsoleApp.csproj",
+      "projectUniqueName": "C:\\Revature\\Project0\\Daniel-Project0\\RedRobin\\RedRobin.ConsoleApp\\RedRobin.ConsoleApp.csproj",
       "projectName": "RedRobin.ConsoleApp",
-      "projectPath": "C:\\Revature\\Daniel-Code\\RedRobin\\RedRobin.ConsoleApp\\RedRobin.ConsoleApp.csproj",
+      "projectPath": "C:\\Revature\\Project0\\Daniel-Project0\\RedRobin\\RedRobin.ConsoleApp\\RedRobin.ConsoleApp.csproj",
       "packagesPath": "C:\\Users\\Daniel13\\.nuget\\packages\\",
-      "outputPath": "C:\\Revature\\Daniel-Code\\RedRobin\\RedRobin.ConsoleApp\\obj\\",
+      "outputPath": "C:\\Revature\\Project0\\Daniel-Project0\\RedRobin\\RedRobin.ConsoleApp\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3829,11 +3829,11 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Revature\\Daniel-Code\\RedRobin\\RedRobin.DataAccess\\RedRobin.DataAccess.csproj": {
-              "projectPath": "C:\\Revature\\Daniel-Code\\RedRobin\\RedRobin.DataAccess\\RedRobin.DataAccess.csproj"
+            "C:\\Revature\\Project0\\Daniel-Project0\\RedRobin\\RedRobin.DataAccess\\RedRobin.DataAccess.csproj": {
+              "projectPath": "C:\\Revature\\Project0\\Daniel-Project0\\RedRobin\\RedRobin.DataAccess\\RedRobin.DataAccess.csproj"
             },
-            "C:\\Revature\\Daniel-Code\\RedRobin\\RedRobin.Library\\RedRobin.Library.csproj": {
-              "projectPath": "C:\\Revature\\Daniel-Code\\RedRobin\\RedRobin.Library\\RedRobin.Library.csproj"
+            "C:\\Revature\\Project0\\Daniel-Project0\\RedRobin\\RedRobin.Library\\RedRobin.Library.csproj": {
+              "projectPath": "C:\\Revature\\Project0\\Daniel-Project0\\RedRobin\\RedRobin.Library\\RedRobin.Library.csproj"
             }
           }
         }

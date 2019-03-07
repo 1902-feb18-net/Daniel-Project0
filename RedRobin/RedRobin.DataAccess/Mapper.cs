@@ -11,12 +11,14 @@ namespace RedRobin.DataAccess
         //Restaurants
         public static Library.Models.Restaurant Map(Restaurant restaurant) => new Library.Models.Restaurant
         {
+            Id = restaurant.RestaurantId,
             Location = restaurant.RestLocation,
             Phone = restaurant.RestPhone
         };
 
         public static Restaurant Map(Library.Models.Restaurant restaurant) => new Restaurant
         {
+            RestaurantId = restaurant.Id,
             RestLocation = restaurant.Location,
             RestPhone = restaurant.Phone
         };

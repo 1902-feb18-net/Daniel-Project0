@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedRobin.ConsoleApp", "RedR
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedRobinTests", "RedRobinTests\RedRobinTests.csproj", "{B0A527E0-E2EB-4438-878D-F361E8344371}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedRobin.DataAccess", "RedRobin.DataAccess\RedRobin.DataAccess.csproj", "{830A0C3C-8D02-43DF-A844-B815C119ADC8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RedRobin.DataAccess", "RedRobin.DataAccess\RedRobin.DataAccess.csproj", "{830A0C3C-8D02-43DF-A844-B815C119ADC8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RedRobin.WebApp", "RedRobin.WebApp\RedRobin.WebApp.csproj", "{A2DA5BAF-92A2-46A3-B7D6-796DA90F66D9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{830A0C3C-8D02-43DF-A844-B815C119ADC8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{830A0C3C-8D02-43DF-A844-B815C119ADC8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{830A0C3C-8D02-43DF-A844-B815C119ADC8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2DA5BAF-92A2-46A3-B7D6-796DA90F66D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2DA5BAF-92A2-46A3-B7D6-796DA90F66D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2DA5BAF-92A2-46A3-B7D6-796DA90F66D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2DA5BAF-92A2-46A3-B7D6-796DA90F66D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

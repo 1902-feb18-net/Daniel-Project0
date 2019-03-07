@@ -3541,11 +3541,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Revature\\Daniel-Code\\RedRobin\\RedRobin.DataAccess\\RedRobin.DataAccess.csproj",
+      "projectUniqueName": "C:\\Revature\\Project0\\Daniel-Project0\\RedRobin\\RedRobin.DataAccess\\RedRobin.DataAccess.csproj",
       "projectName": "RedRobin.DataAccess",
-      "projectPath": "C:\\Revature\\Daniel-Code\\RedRobin\\RedRobin.DataAccess\\RedRobin.DataAccess.csproj",
+      "projectPath": "C:\\Revature\\Project0\\Daniel-Project0\\RedRobin\\RedRobin.DataAccess\\RedRobin.DataAccess.csproj",
       "packagesPath": "C:\\Users\\Daniel13\\.nuget\\packages\\",
-      "outputPath": "C:\\Revature\\Daniel-Code\\RedRobin\\RedRobin.DataAccess\\obj\\",
+      "outputPath": "C:\\Revature\\Project0\\Daniel-Project0\\RedRobin\\RedRobin.DataAccess\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
@@ -3564,8 +3564,8 @@
       "frameworks": {
         "netcoreapp2.2": {
           "projectReferences": {
-            "C:\\Revature\\Daniel-Code\\RedRobin\\RedRobin.Library\\RedRobin.Library.csproj": {
-              "projectPath": "C:\\Revature\\Daniel-Code\\RedRobin\\RedRobin.Library\\RedRobin.Library.csproj"
+            "C:\\Revature\\Project0\\Daniel-Project0\\RedRobin\\RedRobin.Library\\RedRobin.Library.csproj": {
+              "projectPath": "C:\\Revature\\Project0\\Daniel-Project0\\RedRobin\\RedRobin.Library\\RedRobin.Library.csproj"
             }
           }
         }

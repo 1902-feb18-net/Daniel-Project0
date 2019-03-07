@@ -17,3 +17,9 @@ C:\Revature\Daniel-Code\RedRobin\RedRobinTests\obj\Debug\netcoreapp2.2\RedRobinT
 C:\Revature\Daniel-Code\RedRobin\RedRobinTests\obj\Debug\netcoreapp2.2\RedRobinTests.pdb
 C:\Revature\Daniel-Code\RedRobin\RedRobinTests\bin\Debug\netcoreapp2.2\RedRobin.DataAccess.dll
 C:\Revature\Daniel-Code\RedRobin\RedRobinTests\bin\Debug\netcoreapp2.2\RedRobin.DataAccess.pdb
+C:\Revature\Project0\Daniel-Project0\RedRobin\RedRobinTests\obj\Debug\netcoreapp2.2\RedRobinTests.csprojAssemblyReference.cache
+C:\Revature\Project0\Daniel-Project0\RedRobin\RedRobinTests\obj\Debug\netcoreapp2.2\RedRobinTests.csproj.CoreCompileInputs.cache
+C:\Revature\Project0\Daniel-Project0\RedRobin\RedRobinTests\obj\Debug\netcoreapp2.2\RedRobinTests.AssemblyInfoInputs.cache
+C:\Revature\Project0\Daniel-Project0\RedRobin\RedRobinTests\obj\Debug\netcoreapp2.2\RedRobinTests.AssemblyInfo.cs
+C:\Revature\Project0\Daniel-Project0\RedRobin\RedRobinTests\obj\Debug\netcoreapp2.2\RedRobinTests.dll
+C:\Revature\Project0\Daniel-Project0\RedRobin\RedRobinTests\obj\Debug\netcoreapp2.2\RedRobinTests.pdb

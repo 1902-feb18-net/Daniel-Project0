@@ -26,7 +26,7 @@ namespace RedRobin.ConsoleApp
             var dbContext = new RedRobinContext(options);
             IRedRobinRepo redRobinRepository = new RedRobinRepo(dbContext);
 
-            Console.WriteLine("WELCOME TO RED ROBIN");
+            Console.WriteLine("WELCOME");
 
             while (true)
             {
@@ -218,6 +218,7 @@ namespace RedRobin.ConsoleApp
                         logger.Error(ex);
                     }
                 }
+
                 redRobinRepository.AddCustomer(newCustomerModel);
                 dbContext.SaveChanges();
                 logger.Debug("Customer: " + newCustomerModel.Name + " created!");
@@ -548,7 +549,6 @@ namespace RedRobin.ConsoleApp
                 {
                     Console.WriteLine(ex.Message);
                 }
-
 
                 createCustomer(input);
                 Customer custTable = dbContext.Customer.Last();

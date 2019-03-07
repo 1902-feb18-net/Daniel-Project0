@@ -1,0 +1,8 @@
+2019-03-06 12:31:56.3244 DEBUG Ingredient: Chicken created!
+2019-03-06 12:34:29.5423 ERROR System.ArgumentException: Phone number must be in the correct format
+   at RedRobin.Library.Models.Customers.set_Phone(String value) in C:\Revature\Project0\Daniel-Project0\RedRobin\RedRobin.Library\Models\Customers.cs:line 37
+   at RedRobin.ConsoleApp.Program.<Main>g__createCustomer|0_1(String input, <>c__DisplayClass0_0& ) in C:\Revature\Project0\Daniel-Project0\RedRobin\RedRobin.ConsoleApp\Program.cs:line 212
+2019-03-06 12:34:42.2531 DEBUG Customer: Nick Escalona created!
+2019-03-06 12:34:42.9909 DEBUG Order for customer: Nick Escalona - Date: 3/6/2019 12:34:42 PM - Price: 12.00 created!
+2019-03-06 13:55:43.8135 DEBUG Product: Chicken Burger created!
+2019-03-06 13:57:25.7070 DEBUG Product: Burger created!

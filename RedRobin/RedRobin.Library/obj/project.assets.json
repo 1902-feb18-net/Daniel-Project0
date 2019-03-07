@@ -3669,11 +3669,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Revature\\Daniel-Code\\RedRobin\\RedRobin.Library\\RedRobin.Library.csproj",
+      "projectUniqueName": "C:\\Revature\\Project0\\Daniel-Project0\\RedRobin\\RedRobin.Library\\RedRobin.Library.csproj",
       "projectName": "RedRobin.Library",
-      "projectPath": "C:\\Revature\\Daniel-Code\\RedRobin\\RedRobin.Library\\RedRobin.Library.csproj",
+      "projectPath": "C:\\Revature\\Project0\\Daniel-Project0\\RedRobin\\RedRobin.Library\\RedRobin.Library.csproj",
       "packagesPath": "C:\\Users\\Daniel13\\.nuget\\packages\\",
-      "outputPath": "C:\\Revature\\Daniel-Code\\RedRobin\\RedRobin.Library\\obj\\",
+      "outputPath": "C:\\Revature\\Project0\\Daniel-Project0\\RedRobin\\RedRobin.Library\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"

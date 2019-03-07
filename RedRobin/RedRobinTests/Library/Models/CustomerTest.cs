@@ -40,7 +40,7 @@ namespace RedRobinTests
             IRedRobinRepo redRobinRepository = new RedRobinRepo(dbContext);
 
             customer.Name = "Customer Test";
-            customer.Phone = "(111)111-1111";
+            customer.Phone = "(111)111-2222";
 
             redRobinRepository.AddCustomer(customer);
 
