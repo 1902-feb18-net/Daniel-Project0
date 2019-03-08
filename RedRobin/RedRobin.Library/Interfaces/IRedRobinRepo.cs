@@ -15,6 +15,7 @@ namespace RedRobin.Library.Interfaces
         void AddRestaurant(Restaurant restaurant);
         //void UpdateRestaurant(Restaurant restaurant);
         //void DeleteRestaurant(Restaurant restaurant);
+        IEnumerable<Restaurant> GetRestaurantById(int resID);
 
 
         //Customers
@@ -25,6 +26,7 @@ namespace RedRobin.Library.Interfaces
 
         //Ingredients
         void AddIngredient(IngredientsInventory ingredient);
+        IngredientsInventory GetIngredientById(int ingID);
 
         //RestaurantIngredients
         IEnumerable<RestIng> GetAllRestautantIngredient(int resID, int ingID);

@@ -5,6 +5,7 @@ namespace RedRobin.DataAccess
 {
     public partial class ResIng
     {
+
         public int ResIngId { get; set; }
         public int RestaurantId { get; set; }
         public int IngredientId { get; set; }

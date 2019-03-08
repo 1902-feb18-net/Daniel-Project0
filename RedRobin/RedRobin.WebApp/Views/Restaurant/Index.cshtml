@@ -38,9 +38,9 @@
             </td>
             <td>
                 
-                @Html.ActionLink(HtmlEncoder.Encode("Ux270E"), "Edit", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("🔍", "Details", new { /* id=item.PrimaryKey */ }) |
-                @Html.ActionLink("🗑", "Delete", new { /* id=item.PrimaryKey */ })
+                @Html.ActionLink("✎", "Edit", new {  id=item.Id }, new { Class = "action add", title = "Edit" }) |
+                @Html.ActionLink("🔍", "Details", new { id = item.Id }, new { Class = "action add", title = "Details" }) |
+                @Html.ActionLink("🗑", "Delete", new { id = item.Id }, new { Class = "action add", title = "Delete" })
             </td>
         </tr>
 }

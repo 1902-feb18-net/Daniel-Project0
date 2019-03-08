@@ -83,6 +83,7 @@ namespace RedRobin.DataAccess
             RestaurantId = resIngredient.restaurantId,
             Qty = resIngredient.resIngQty,
 
+            
         };
 
         public static IEnumerable<Library.Models.RestIng> Map(IEnumerable<ResIng> resIngredientPro) => resIngredientPro.Select(Map);

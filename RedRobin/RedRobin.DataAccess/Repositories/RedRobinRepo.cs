@@ -1,4 +1,5 @@
-﻿using RedRobin.DataAccess;
+﻿using Microsoft.EntityFrameworkCore;
+using RedRobin.DataAccess;
 using RedRobin.Library.Interfaces;
 using System;
 using System.Collections.Generic;
@@ -21,6 +22,14 @@ namespace RedRobin.Library.Repositories
         {
 
             return Mapper.Map(_db.Restaurant);
+        }
+
+        public IEnumerable<Models.Restaurant> GetRestaurantById(int resID)
+        {
+
+            return Mapper.Map(from s in _db.Restaurant
+                              where s.RestaurantId == resID
+                              select s);
         }
 
         public void AddRestaurant(Models.Restaurant restaurant)
@@ -123,6 +132,12 @@ namespace RedRobin.Library.Repositories
                               equals sa.IngredientId
                               where sa.RestaurantId == resID
                               select s);
+        }
+
+        public Models.IngredientsInventory GetIngredientById(int ingID)
+        {
+
+            return Mapper.Map(_db.Ingredients.AsNoTracking().First(r => r.IngredientId == ingID));
         }
 
         public void AddRestaurantIngredient(Models.RestIng restIng)
