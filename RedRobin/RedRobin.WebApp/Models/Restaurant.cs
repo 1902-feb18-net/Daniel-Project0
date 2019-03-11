@@ -15,6 +15,8 @@ namespace RedRobin.WebApp.Models
         public string Location { get; set; }
 
         [Required]
+        [Display(Name = "Restaurant Phone: (xxx)xxx-xxxx")]
+        [RegularExpression(@"\(?\d{3}\)?-? *\d{3}-? *-?\d{4}", ErrorMessage = "Must Enter a valid phone number")]
         public string Phone { get; set; }
     }
 }

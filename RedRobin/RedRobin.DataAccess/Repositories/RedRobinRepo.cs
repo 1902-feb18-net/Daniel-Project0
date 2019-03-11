@@ -24,12 +24,11 @@ namespace RedRobin.Library.Repositories
             return Mapper.Map(_db.Restaurant);
         }
 
-        public IEnumerable<Models.Restaurant> GetRestaurantById(int resID)
+
+        public Models.Restaurant GetRestaurantById(int resID)
         {
 
-            return Mapper.Map(from s in _db.Restaurant
-                              where s.RestaurantId == resID
-                              select s);
+            return Mapper.Map(_db.Restaurant.AsNoTracking().First(r => r.RestaurantId == resID));
         }
 
         public void AddRestaurant(Models.Restaurant restaurant)
@@ -41,12 +40,59 @@ namespace RedRobin.Library.Repositories
             _db.Add(Mapper.Map(restaurant));
         }
 
+        public void UpdateRestaurant(Models.Restaurant restaurant)
+        {
+            // calling Update would mark every property as Modified.
+            // this way will only mark the changed properties as Modified.
+            _db.Entry(_db.Restaurant.Find(restaurant.Id)).CurrentValues.SetValues(Mapper.Map(restaurant));
+        }
+
+        public void DeleteRestaurant(int restaurantId)
+        {
+            _db.Remove(_db.Restaurant.Find(restaurantId));
+        }
+
+        public void DeleteRestaurantInRestIng(int restaurantId)
+        {
+            _db.Remove(_db.ResIng.Find(restaurantId));
+        }
+
+        public void DeleteRestaurantInRestPro(int restaurantId)
+        {
+            _db.Remove(_db.ResPro.Find(restaurantId));
+        }
+
+        public void DeleteRestaurantInOrders(int restaurantId)
+        {
+            _db.Remove(_db.Orders.Find(restaurantId));
+        }
+
         //Customers
 
         public IEnumerable<Models.Customers> GetCustomer(string custName)
         {
             return Mapper.Map(from s in _db.Customer
                               where s.CustName == custName
+                              select s);
+        }
+
+        public Models.Customers GetCustomerById(int custID)
+        {
+
+            return Mapper.Map(_db.Customer.AsNoTracking().First(r => r.CustomerId == custID));
+        }
+
+        public Models.Customers GetLastCust()
+        {
+            //return Mapper.Map(_db.ResIngPro.Where(r=>r.RestaurantId== resID));
+            return Mapper.Map(_db.Customer.Last());
+        }
+
+        public IEnumerable<Models.Customers> GetCustomerByName(string name)
+        {
+            //return Mapper.Map(_db.ResIngPro.Where(r=>r.RestaurantId== resID));
+            return Mapper.Map(from s in _db.Customer
+                              where s.CustName == name
                               select s);
         }
 
@@ -140,6 +186,12 @@ namespace RedRobin.Library.Repositories
             return Mapper.Map(_db.Ingredients.AsNoTracking().First(r => r.IngredientId == ingID));
         }
 
+        public Models.RestIng GetIngredientByIdIngRes(int ingID)
+        {
+
+            return Mapper.Map(_db.ResIng.AsNoTracking().First(r => r.IngredientId == ingID));
+        }
+
         public void AddRestaurantIngredient(Models.RestIng restIng)
         {
             //if (_data.Any(r => r.Id == restaurant.Id))
@@ -158,12 +210,34 @@ namespace RedRobin.Library.Repositories
 
         //Products
 
+        public void UpdateProduct(Models.Products product)
+        {
+            // calling Update would mark every property as Modified.
+            // this way will only mark the changed properties as Modified.
+            _db.Entry(_db.Product.Find(product.Id)).CurrentValues.SetValues(Mapper.Map(product));
+        }
+
         public IEnumerable<Models.Products> GetAllProducts(int restID)
         {
             return Mapper.Map(from s in _db.Product
                               join sa in _db.ResPro on s.ProductId
                               equals sa.ProductId
                               where sa.RestaurantId == restID
+                              select s);
+        }
+
+        public Models.Products GetProductById(int proID)
+        {
+
+            return Mapper.Map(_db.Product.AsNoTracking().First(r => r.ProductId == proID));
+        }
+
+        public IEnumerable<Models.ResPro> GetAllProductsDB(int ResID)
+        {
+            return Mapper.Map(from s in _db.ResPro
+                              join sa in _db.Product on s.ProductId
+                              equals sa.ProductId
+                              where s.RestaurantId == ResID
                               select s);
         }
 
@@ -182,6 +256,13 @@ namespace RedRobin.Library.Repositories
             return Mapper.Map(_db.Product);
         }
 
+        public IEnumerable<Models.Products> GetLastPro()
+        {
+            //return Mapper.Map(_db.ResIngPro.Where(r=>r.RestaurantId== resID));
+            return Mapper.Map(from s in _db.Product
+                              select s);
+        }
+
         //IngredientsProducts
 
         public IEnumerable<Models.IngredientsInventory> GetAllIngredientProducts(int proID)
@@ -191,6 +272,13 @@ namespace RedRobin.Library.Repositories
                               join sa in _db.IngPro on s.IngredientId
                               equals sa.IngredientId
                               where sa.ProductId == proID
+                              select s);
+        }
+
+        public IEnumerable<Models.IngredientsInventory> GetLastIng()
+        {
+            //return Mapper.Map(_db.ResIngPro.Where(r=>r.RestaurantId== resID));
+            return Mapper.Map(from s in _db.Ingredients
                               select s);
         }
 
@@ -238,6 +326,13 @@ namespace RedRobin.Library.Repositories
             //    throw new InvalidOperationException($"Restaurant located at {restaurant.Location} already exists.");
             //}
             _db.Add(Mapper.Map(orders));
+        }
+
+        public IEnumerable<Models.Orders> GetLastOrd()
+        {
+            //return Mapper.Map(_db.ResIngPro.Where(r=>r.RestaurantId== resID));
+            return Mapper.Map(from s in _db.Orders
+                              select s);
         }
 
         public IEnumerable<Models.Orders> GetOrdersfromRestaurant(int restID)
@@ -340,6 +435,32 @@ namespace RedRobin.Library.Repositories
             return Mapper.Map(_db.Orders);
         }
 
+        public void UpdateOrder(Models.Orders order)
+        {
+            // calling Update would mark every property as Modified.
+            // this way will only mark the changed properties as Modified.
+            _db.Entry(_db.Orders.Find(order.Id)).CurrentValues.SetValues(Mapper.Map(order));
+        }
+        public Models.Orders GetOrdersById(int ordID)
+        {
+
+            return Mapper.Map(_db.Orders.AsNoTracking().First(r => r.OrderId == ordID));
+        }
+
+        public IEnumerable<Models.Products> GetProductRevenue(int proID)
+        {
+            //if (_data.Any(r => r.Id == restaurant.Id))
+            //{
+            //    throw new InvalidOperationException($"Restaurant located at {restaurant.Location} already exists.");
+            //}
+            return Mapper.Map(from s in _db.Product
+                              join sa in _db.OrderProduct on s.ProductId
+                              equals sa.ProductId
+                              where sa.ProductId == proID
+                              select s);
+        }
+
+
         //OrdersProducts
 
         public void AddOrderProduct(Models.OrdPro ordPro)
@@ -365,6 +486,11 @@ namespace RedRobin.Library.Repositories
             return Mapper.Map(from s in _db.OrderProduct
                               where s.ProductId == proID
                               select s);
+        }
+
+        public void Save()
+        {
+            _db.SaveChanges();
         }
     }
 }

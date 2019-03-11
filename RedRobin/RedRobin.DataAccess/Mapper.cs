@@ -32,12 +32,14 @@ namespace RedRobin.DataAccess
 
         public static Library.Models.Customers Map(Customer customer) => new Library.Models.Customers
         {
+            Id = customer.CustomerId,
             Name = customer.CustName,
             Phone = customer.CustPhone
         };
 
         public static Customer Map(Library.Models.Customers customer) => new Customer
         {
+            CustomerId = customer.Id,
             CustName = customer.Name,
             CustPhone = customer.Phone
         };
@@ -164,7 +166,7 @@ namespace RedRobin.DataAccess
             cutomerID = orders.CustomerId,
             orderDate = orders.OrdDate,
             CostTotal = orders.OrdCost,
-
+            Products = Map(orders.OrderProduct).ToList()
         };
 
         public static Orders Map(Library.Models.Orders orders) => new Orders
@@ -174,6 +176,7 @@ namespace RedRobin.DataAccess
             OrdDate = orders.orderDate,
             OrdCost = orders.CostTotal,
             RestaurantId = orders.restaurantID,
+            OrderProduct = Map(orders.Products).ToList()
         };
 
         public static IEnumerable<Library.Models.Orders> Map(IEnumerable<Orders> orders) => orders.Select(Map);

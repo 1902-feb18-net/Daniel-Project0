@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.ModelBinding;
 using RedRobin.Library.Interfaces;
 using RedRobin.Library.Models;
 
@@ -46,13 +47,22 @@ namespace RedRobin.WebApp.Controllers
         // POST: Restaurant/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create(Models.Restaurant restaurant)
         {
             try
             {
-                // TODO: Add insert logic here
+                if (ModelState.IsValid)
+                {
+                    Repo.AddRestaurant(new Restaurant
+                    {
+                        Location = restaurant.Location,
+                        Phone = restaurant.Phone,
+                    });
+                    Repo.Save();
 
-                return RedirectToAction(nameof(Index));
+                    return RedirectToAction(nameof(Index));
+                }
+                return View(restaurant);
             }
             catch
             {
@@ -63,40 +73,62 @@ namespace RedRobin.WebApp.Controllers
         // GET: Restaurant/Edit/5
         public ActionResult Edit(int id)
         {
-            return View();
+            Restaurant libRest = Repo.GetRestaurantById(id);
+            var webRest = new Models.Restaurant
+            {
+                Id = libRest.Id,
+                Location = libRest.Location,
+                Phone = libRest.Phone
+            };
+            return View(webRest);
         }
 
         // POST: Restaurant/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit(int id, IFormCollection collection)
+        public ActionResult Edit([FromRoute]int id, Models.Restaurant restaurant)
         {
             try
             {
-                // TODO: Add update logic here
+                if (ModelState.IsValid)
+                {
+                    Restaurant libRest = Repo.GetRestaurantById(id);
+                    libRest.Location = restaurant.Location;
+                    libRest.Phone = restaurant.Phone;
+                    Repo.UpdateRestaurant(libRest);
+                    Repo.Save();
 
-                return RedirectToAction(nameof(Index));
+                    return RedirectToAction(nameof(Index));
+                }
+                return View(restaurant);
             }
-            catch
+            catch (Exception)
             {
-                return View();
+                return View(restaurant);
             }
         }
 
         // GET: Restaurant/Delete/5
         public ActionResult Delete(int id)
         {
-            return View();
+            Restaurant libRest = Repo.GetRestaurantById(id);
+            var webRest = new Models.Restaurant
+            {
+                Id = libRest.Id,
+                Location = libRest.Location
+            };
+            return View(webRest);
         }
 
         // POST: Restaurant/Delete/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Delete(int id, IFormCollection collection)
+        public ActionResult Delete(int id, [BindNever]IFormCollection collection)
         {
             try
             {
-                // TODO: Add delete logic here
+                Repo.DeleteRestaurant(id);
+                Repo.Save();
 
                 return RedirectToAction(nameof(Index));
             }

@@ -1,0 +1,51 @@
+﻿@model RedRobin.WebApp.Models.Ingredient
+
+@{
+    ViewData["Title"] = "AddIngredient";
+}
+
+<style>
+    body {
+        background-color: #fbefcc;
+    }
+</style>
+
+<h1>Add the Qty of Ing. to Product</h1>
+
+<h4>Ingredient</h4>
+<hr />
+<div class="row">
+    <div class="col-md-4">
+        <form asp-action="AddIngredient">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="name" class="control-label"></label>
+                <input asp-for="name" class="form-control" readonly />
+                <span asp-validation-for="name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QtyToStock" class="control-label"></label>
+                <input asp-for="QtyToStock" class="form-control" readonly/>
+                <span asp-validation-for="QtyToStock" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="QtyToAdd" class="control-label"></label>
+                <input asp-for="QtyToAdd" class="form-control" />
+                <span asp-validation-for="QtyToAdd" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cost" class="control-label"></label>
+                <input asp-for="Cost" class="form-control" readonly/>
+                <span asp-validation-for="Cost" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Create" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+

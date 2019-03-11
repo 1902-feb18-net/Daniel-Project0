@@ -4,6 +4,11 @@
     ViewData["Title"] = "Index";
 }
 
+<style>
+    body {
+        background-color: #fbefcc;
+    }
+</style>
 <h1>Restaurants</h1>
 
 <p>
@@ -25,24 +30,24 @@
         </tr>
     </thead>
     <tbody>
-@foreach (var item in Model) {
-        <tr>
-            <td>
-                @Html.DisplayFor(modelItem => item.Id)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Location)
-            </td>
-            <td>
-                @Html.DisplayFor(modelItem => item.Phone)
-            </td>
-            <td>
-                
-                @Html.ActionLink("✎", "Edit", new {  id=item.Id }, new { Class = "action add", title = "Edit" }) |
-                @Html.ActionLink("🔍", "Details", new { id = item.Id }, new { Class = "action add", title = "Details" }) |
-                @Html.ActionLink("🗑", "Delete", new { id = item.Id }, new { Class = "action add", title = "Delete" })
-            </td>
-        </tr>
-}
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Location)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Phone)
+                </td>
+                <td>
+
+                    @Html.ActionLink("✎", "Edit", new { id = item.Id }, new { Class = "action add", title = "Edit" }) |
+                    @Html.ActionLink("🗑", "Delete", new { id = item.Id }, new { Class = "action add", title = "Delete" })
+                </td>
+            </tr>
+        }
     </tbody>
 </table>

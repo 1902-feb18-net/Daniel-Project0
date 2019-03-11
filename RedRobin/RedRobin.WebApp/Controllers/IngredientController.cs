@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
+using RedRobin.DataAccess;
 using RedRobin.Library.Interfaces;
 using RedRobin.Library.Models;
 
@@ -11,6 +12,8 @@ namespace RedRobin.WebApp.Controllers
 {
     public class IngredientController : Controller
     {
+
+        public static int restID = 0;
 
         public IRedRobinRepo Repo { get; }
 
@@ -23,7 +26,7 @@ namespace RedRobin.WebApp.Controllers
         public ActionResult Index()
         {
 
-            IEnumerable<Restaurant> libRests = Repo.GetAllRestaurants();
+            IEnumerable<Library.Models.Restaurant> libRests = Repo.GetAllRestaurants();
             IEnumerable<Models.Restaurant> webRests = libRests.Select(x => new Models.Restaurant
             {
                 Id = x.Id,
@@ -36,15 +39,16 @@ namespace RedRobin.WebApp.Controllers
         // GET: Ingredient/Details/5
         public ActionResult Details(int id)
         {
-            IEnumerable<RestIng> libRestIng = Repo.GetAllIngredientsDB(id);
-            IEnumerable<Restaurant> libRest = Repo.GetRestaurantById(id);
+            restID = id;
+            IEnumerable<RestIng> libRestIng = Repo.GetAllIngredientsDB(restID).ToList();
+            Library.Models.Restaurant libRest = Repo.GetRestaurantById(restID);
             IEnumerable<Models.Ingredient> webRests = libRestIng.Select(x => new Models.Ingredient
             {
                 Id = x.ingredientId,
                 name = Repo.GetIngredientById(x.ingredientId).Name,
-                Qty = x.resIngQty,
-                Cost = Repo.GetAllIngredients(id).ToList()[0].Cost,
-                Restaurant = libRest.ToList()[0].Location
+                QtyToStock = x.resIngQty,
+                Cost = Repo.GetIngredientById(x.ingredientId).Cost,
+                Restaurant = libRest.Location
             });
 
             return View(webRests);
@@ -59,13 +63,30 @@ namespace RedRobin.WebApp.Controllers
         // POST: Ingredient/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create(IFormCollection collection)
+        public ActionResult Create([FromRoute]int id, Models.Ingredient ingredient)
         {
             try
             {
-                // TODO: Add insert logic here
+                if (ModelState.IsValid)
+                {
+                    Repo.AddIngredient(new IngredientsInventory
+                    {
+                        Name = ingredient.name,
+                        Cost = ingredient.Cost,
+                    });
+                    Repo.Save();
+                    IngredientsInventory ingTable = Repo.GetLastIng().Last();
+                    Repo.AddRestaurantIngredient(new RestIng
+                    {
+                        resIngQty = ingredient.QtyToStock,
+                        restaurantId = restID,
+                        ingredientId = ingTable.Id
+                    });
+                    Repo.Save();
 
-                return RedirectToAction(nameof(Index));
+                    return RedirectToAction(nameof(Index));
+                }
+                return View(ingredient);
             }
             catch
             {

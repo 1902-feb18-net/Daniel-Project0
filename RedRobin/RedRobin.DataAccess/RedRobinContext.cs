@@ -25,6 +25,7 @@ namespace RedRobin.DataAccess
         public virtual DbSet<ResPro> ResPro { get; set; }
         public virtual DbSet<Restaurant> Restaurant { get; set; }
 
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.HasAnnotation("ProductVersion", "2.2.2-servicing-10034");
@@ -63,13 +64,11 @@ namespace RedRobin.DataAccess
                 entity.HasOne(d => d.Ingredient)
                     .WithMany(p => p.IngPro)
                     .HasForeignKey(d => d.IngredientId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_IngPro");
 
                 entity.HasOne(d => d.Product)
                     .WithMany(p => p.IngPro)
                     .HasForeignKey(d => d.ProductId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_ProIng");
             });
 
@@ -92,7 +91,7 @@ namespace RedRobin.DataAccess
             modelBuilder.Entity<OrderProduct>(entity =>
             {
                 entity.HasKey(e => e.OrdProId)
-                    .HasName("PK__OrderPro__E7B00264A2B9261D");
+                    .HasName("PK__OrderPro__E7B00264B3FE9F61");
 
                 entity.ToTable("OrderProduct", "RR");
 
@@ -105,20 +104,18 @@ namespace RedRobin.DataAccess
                 entity.HasOne(d => d.Order)
                     .WithMany(p => p.OrderProduct)
                     .HasForeignKey(d => d.OrderId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_ProOrderProduct");
 
                 entity.HasOne(d => d.Product)
                     .WithMany(p => p.OrderProduct)
                     .HasForeignKey(d => d.ProductId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_OrdOrderProduct");
             });
 
             modelBuilder.Entity<Orders>(entity =>
             {
                 entity.HasKey(e => e.OrderId)
-                    .HasName("PK__Orders__C3905BAFA0334944");
+                    .HasName("PK__Orders__C3905BAF76B27A5F");
 
                 entity.ToTable("Orders", "RR");
 
@@ -133,13 +130,11 @@ namespace RedRobin.DataAccess
                 entity.HasOne(d => d.Customer)
                     .WithMany(p => p.Orders)
                     .HasForeignKey(d => d.CustomerId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Customer");
 
                 entity.HasOne(d => d.Restaurant)
                     .WithMany(p => p.Orders)
                     .HasForeignKey(d => d.RestaurantId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_Restaurant");
             });
 
@@ -183,13 +178,11 @@ namespace RedRobin.DataAccess
                 entity.HasOne(d => d.Ingredient)
                     .WithMany(p => p.ResIng)
                     .HasForeignKey(d => d.IngredientId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_IngResIngPro");
 
                 entity.HasOne(d => d.Restaurant)
                     .WithMany(p => p.ResIng)
                     .HasForeignKey(d => d.RestaurantId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_ResResIngPro");
             });
 
@@ -206,13 +199,11 @@ namespace RedRobin.DataAccess
                 entity.HasOne(d => d.Product)
                     .WithMany(p => p.ResPro)
                     .HasForeignKey(d => d.ProductId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_ResPro");
 
                 entity.HasOne(d => d.Restaurant)
                     .WithMany(p => p.ResPro)
                     .HasForeignKey(d => d.RestaurantId)
-                    .OnDelete(DeleteBehavior.ClientSetNull)
                     .HasConstraintName("fk_ProRes");
             });
 

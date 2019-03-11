@@ -1,0 +1,69 @@
+﻿@model IEnumerable<RedRobin.WebApp.Models.Orders>
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<style>
+    body {
+        background-color: #fbefcc;
+    }
+</style>
+
+<h1>List of Orders</h1>
+
+<p>
+    <a asp-action="Create">Create New  Order</a>
+</p>
+
+<h2>Sort by:</h2>
+<p>
+    @Html.ActionLink("Earliest ", "Details", new { sort = 1 })
+</p>
+<p>
+    @Html.ActionLink("Lastest ", "Details", new { sort = 2 })
+</p>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.Id)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.orderDate)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.orderTotal)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.custName)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Id)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.orderDate)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.orderTotal)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.custName)
+                </td>
+                <td>
+                    @*@Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |*@
+                    @Html.ActionLink("Details", "OrdersDetails", new { id = item.Id })
+                    @*@Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })*@
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

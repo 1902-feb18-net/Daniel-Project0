@@ -8,8 +8,6 @@ namespace RedRobin.Library.Models
     {
         public int Id { get; set; }
 
-        public List<Products> products { get; set; } = new List<Products>();
-
         public int cutomerID { get; set; }
 
         public int restaurantID { get; set; }
@@ -69,6 +67,7 @@ namespace RedRobin.Library.Models
 
 
         public decimal CostTotal { get; set; }
+        public List<OrdPro> Products { get; set; } = new List<OrdPro>();
 
         //public decimal CostTotal
         //{

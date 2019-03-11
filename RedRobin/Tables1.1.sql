@@ -35,8 +35,8 @@ CREATE TABLE RR.Orders (
 	OrdCost decimal(7,2) NOT NULL,
 	CustomerID int NOT NULL,
 	RestaurantID int NOT NULL,
-	constraint fk_Customer foreign key (CustomerID) references RR.Customer (CustomerID),
-	constraint fk_Restaurant foreign key (RestaurantID) references RR.Restaurant (RestaurantID)
+	constraint fk_Customer foreign key (CustomerID) references RR.Customer (CustomerID) on delete cascade,
+	constraint fk_Restaurant foreign key (RestaurantID) references RR.Restaurant (RestaurantID) on delete cascade
 );
 
 
@@ -44,8 +44,8 @@ CREATE TABLE RR.OrderProduct (
     OrdProID int IDENTITY(1,1) PRIMARY KEY NOT NULL,
 	OrderID int NOT NULL,
 	ProductID int NOT NULL,
-	constraint fk_OrdOrderProduct foreign key (ProductID) references RR.Product (ProductID),
-	constraint fk_ProOrderProduct foreign key (OrderID) references RR.Orders (OrderID),
+	constraint fk_OrdOrderProduct foreign key (ProductID) references RR.Product (ProductID) on delete cascade,
+	constraint fk_ProOrderProduct foreign key (OrderID) references RR.Orders (OrderID) on delete cascade,
 );
 
 CREATE TABLE RR.ResIng (
@@ -53,8 +53,8 @@ CREATE TABLE RR.ResIng (
     RestaurantID int NOT NULL,
 	IngredientID int NOT NULL,
 	Qty decimal(7,2) NOT NULL,
-	constraint fk_ResResIngPro foreign key (RestaurantID) references RR.Restaurant (RestaurantID),
-	constraint fk_IngResIngPro foreign key (IngredientID) references RR.Ingredients (IngredientID),
+	constraint fk_ResResIngPro foreign key (RestaurantID) references RR.Restaurant (RestaurantID) on delete cascade,
+	constraint fk_IngResIngPro foreign key (IngredientID) references RR.Ingredients (IngredientID) on delete cascade,
 	CONSTRAINT UC_ResIng UNIQUE (RestaurantID,IngredientID),
 );
 
@@ -62,8 +62,8 @@ CREATE TABLE RR.ResPro (
     ResProID int IDENTITY(1,1) PRIMARY KEY NOT NULL,
     ProductID int NOT NULL,
 	RestaurantID int NOT NULL,
-	constraint fk_ResPro foreign key (ProductID) references RR.Product (ProductID),
-	constraint fk_ProRes foreign key (RestaurantID) references RR.Restaurant (RestaurantID),
+	constraint fk_ResPro foreign key (ProductID) references RR.Product (ProductID) on delete cascade,
+	constraint fk_ProRes foreign key (RestaurantID) references RR.Restaurant (RestaurantID) on delete cascade,
 );
 
 CREATE TABLE RR.IngPro (
@@ -71,8 +71,8 @@ CREATE TABLE RR.IngPro (
 	IngredientID int NOT NULL,
 	ProductID int NOT NULL,
 	Qty decimal(7,2) NOT NULL,
-	constraint fk_IngPro foreign key (IngredientID) references RR.Ingredients (IngredientID),
-	constraint fk_ProIng foreign key (ProductID) references RR.Product (ProductID),
+	constraint fk_IngPro foreign key (IngredientID) references RR.Ingredients (IngredientID) on delete cascade,
+	constraint fk_ProIng foreign key (ProductID) references RR.Product (ProductID) on delete cascade,
 );
 
 
@@ -114,11 +114,17 @@ drop table RR.ResIng
 drop table RR.OrderProduct
 drop table RR.IngPro
 drop table RR.ResPro
+drop table RR.Orders
 
 
-select * from RR.ResIng as IR
-join RR.Ingredients as I
-on IR.IngredientID = I.IngredientID
-where IR.RestaurantID = 11
+select * from RR.Product as P
+join RR.OrderProduct as OP
+on P.ProductID = OP.ProductID
+where OP.ProductID = 34
 
 
+delete from RR.Ingredients
+where IngName = 'Chicken'
+
+delete from RR.Product
+where ProName = 'Chicken Burger'

@@ -4,10 +4,16 @@
     ViewData["Title"] = "Details";
 }
 
+<style>
+    body {
+        background-color: #fbefcc;
+    }
+</style>
+
 <h1>Details</h1>
 
 <p>
-    <a asp-action="Create">Create New</a>
+    <a asp-action="Create">Create New Ingredient</a>
 </p>
 <table class="table">
     <thead>
@@ -19,7 +25,7 @@
                 @Html.DisplayNameFor(model => model.name)
             </th>
             <th>
-                @Html.DisplayNameFor(model => model.Qty)
+                @Html.DisplayNameFor(model => model.QtyToStock)
             </th>
             <th>
                 @Html.DisplayNameFor(model => model.Cost)
@@ -40,7 +46,7 @@
                 @Html.DisplayFor(modelItem => item.name)
             </td>
             <td>
-                @Html.DisplayFor(modelItem => item.Qty)
+                @Html.DisplayFor(modelItem => item.QtyToStock)
             </td>
             <td>
                 @Html.DisplayFor(modelItem => item.Cost)
@@ -48,11 +54,11 @@
             <td>
                 @Html.DisplayFor(modelItem => item.Restaurant)
             </td>
-            <td>
+            @*<td>
                 @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
                 @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
-            </td>
+            </td>*@
         </tr>
 }
     </tbody>

@@ -15,7 +15,12 @@ namespace RedRobin.Library.Interfaces
         void AddRestaurant(Restaurant restaurant);
         //void UpdateRestaurant(Restaurant restaurant);
         //void DeleteRestaurant(Restaurant restaurant);
-        IEnumerable<Restaurant> GetRestaurantById(int resID);
+        Restaurant GetRestaurantById(int resID);
+        void UpdateRestaurant(Restaurant restaurant);
+        void DeleteRestaurant(int restaurantId);
+        void DeleteRestaurantInRestIng(int restaurantId);
+        void DeleteRestaurantInRestPro(int restaurantId);
+        void DeleteRestaurantInOrders(int restaurantId);
 
 
         //Customers
@@ -23,10 +28,15 @@ namespace RedRobin.Library.Interfaces
         void AddCustomer(Customers restaurant);
         IEnumerable<Customers> GetOrdersfromCustomer(int orderID);
         IEnumerable<Customers> GetAllCustomers();
+        Customers GetCustomerById(int custID);
+        // IEnumerable<Customers> GetLastCust();
+        Models.Customers GetLastCust();
+        IEnumerable<Models.Customers> GetCustomerByName(string name);
 
         //Ingredients
         void AddIngredient(IngredientsInventory ingredient);
         IngredientsInventory GetIngredientById(int ingID);
+        IEnumerable<IngredientsInventory> GetLastIng();
 
         //RestaurantIngredients
         IEnumerable<RestIng> GetAllRestautantIngredient(int resID, int ingID);
@@ -36,12 +46,17 @@ namespace RedRobin.Library.Interfaces
         void UpdateRestaurantIngredient(RestIng restIngredient);
         IEnumerable<RestIng> GetAllIngredientsDB(int ResID);
         IEnumerable<IngredientsInventory> GetAllIngredients(int ingID);
+        RestIng GetIngredientByIdIngRes(int ingID);
 
 
         //Products
         IEnumerable<Products> GetAllProducts(int restID);
         void AddProduct(Products burger);
         IEnumerable<Products> GetAllProductsDB();
+        Products GetProductById(int proID);
+        IEnumerable<Products> GetLastPro();
+        void UpdateProduct(Products product);
+        IEnumerable<Models.Products> GetProductRevenue(int proID);
 
         //IngredientsProducts
         IEnumerable<IngredientsInventory> GetAllIngredientProducts(int proID);
@@ -52,6 +67,7 @@ namespace RedRobin.Library.Interfaces
 
         //RestauranrProducts
         void AddRestaurantProduct(ResPro resProducts);
+        IEnumerable<ResPro> GetAllProductsDB(int ResID);
 
         //Orders
         void AddOrders(Orders orders);
@@ -65,10 +81,15 @@ namespace RedRobin.Library.Interfaces
         IEnumerable<Orders> GetOrdersRevenueMonth(int restID, DateTime date);
         IEnumerable<Orders> GetOrdersRevenueYear(int restID, DateTime date);
         IEnumerable<Orders> GetAllOrdersDB();
+        IEnumerable<Orders> GetLastOrd();
+        void UpdateOrder(Orders order);
+        Orders GetOrdersById(int ordID);
 
         //OrderProduct
         void AddOrderProduct(OrdPro ordPro);
         IEnumerable<Products> GetAllOrderProducts(int orderID);
         IEnumerable<OrdPro> GetCountProducts(int proID);
+
+        void Save();
     }
 }
