@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="danielren13redrobin" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^C:\\Revature\\Project0\\Daniel-Project0\\RedRobin\\RedRobin\.WebApp\\obj\\Release\\netcoreapp2\.2\\PubTmp\\Out\\$" />
+  </parameter>
+</parameters>
