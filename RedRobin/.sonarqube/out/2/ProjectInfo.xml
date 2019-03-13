@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ProjectInfo xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns="http://www.sonarsource.com/msbuild/integration/2015/1">
+  <ProjectName>RedRobinTests</ProjectName>
+  <ProjectLanguage>C#</ProjectLanguage>
+  <ProjectType>Test</ProjectType>
+  <ProjectGuid>b0a527e0-e2eb-4438-878d-f361e8344371</ProjectGuid>
+  <FullPath>C:\revature\project0\daniel-project0\redrobin\RedRobinTests\RedRobinTests.csproj</FullPath>
+  <IsExcluded>false</IsExcluded>
+  <AnalysisResults>
+    <AnalysisResult Id="FilesToAnalyze" Location="C:\revature\project0\daniel-project0\redrobin\.sonarqube\out\2\FilesToAnalyze.txt" />
+  </AnalysisResults>
+  <AnalysisSettings>
+    <Property Name="sonar.cs.roslyn.reportFilePath">C:\revature\project0\daniel-project0\redrobin\RedRobinTests\bin\Debug\netcoreapp2.2\RedRobinTests.dll.RoslynCA.json|C:\revature\project0\daniel-project0\redrobin\RedRobinTests\bin\Debug\netcoreapp2.2\RedRobinTests.dll.RoslynCA.json</Property>
+    <Property Name="sonar.cs.analyzer.projectOutPath">C:\revature\project0\daniel-project0\redrobin\.sonarqube\out\2</Property>
+  </AnalysisSettings>
+  <Configuration>Debug</Configuration>
+  <Platform>AnyCPU</Platform>
+  <TargetFramework>netcoreapp2.2</TargetFramework>
+</ProjectInfo>

@@ -27,33 +27,33 @@ namespace RedRobinTests
             Assert.ThrowsAny<ArgumentException>(() => customer.Name = string.Empty);
         }
 
-        [Fact]
-        public void Add_Customer()
-        {
-            var optionsBuilder = new DbContextOptionsBuilder<RedRobinContext>();
-            optionsBuilder.UseSqlServer(SecretConfiguration.ConnectionString);
-            var options = optionsBuilder.Options;
-            bool custAdded = false;
+        //[Fact]
+        //public void Add_Customer()
+        //{
+        //    var optionsBuilder = new DbContextOptionsBuilder<RedRobinContext>();
+        //    optionsBuilder.UseSqlServer(SecretConfiguration.ConnectionString);
+        //    var options = optionsBuilder.Options;
+        //    bool custAdded = false;
 
-            var dbContext = new RedRobinContext(options);
+        //    var dbContext = new RedRobinContext(options);
 
-            IRedRobinRepo redRobinRepository = new RedRobinRepo(dbContext);
+        //    IRedRobinRepo redRobinRepository = new RedRobinRepo(dbContext);
 
-            customer.Name = "Customer Test";
-            customer.Phone = "(111)111-2222";
+        //    customer.Name = "Customer Test";
+        //    customer.Phone = "(111)111-2222";
 
-            redRobinRepository.AddCustomer(customer);
+        //    redRobinRepository.AddCustomer(customer);
 
-            dbContext.SaveChanges();
+        //    dbContext.SaveChanges();
 
-            foreach (var item in redRobinRepository.GetAllCustomers())
-            {
-                if (item.Name == "Customer Test")
-                {
-                    custAdded = true;
-                }
-            }
-            Assert.True(custAdded);
-        }
+        //    foreach (var item in redRobinRepository.GetAllCustomers())
+        //    {
+        //        if (item.Name == "Customer Test")
+        //        {
+        //            custAdded = true;
+        //        }
+        //    }
+        //    Assert.True(custAdded);
+        //}
     }
 }

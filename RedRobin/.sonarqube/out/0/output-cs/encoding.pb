@@ -1,0 +1,12 @@
+c
+ZC:\revature\project0\daniel-project0\redrobin\RedRobin.Library\Interfaces\IRedRobinRepo.csutf-8[
+RC:\revature\project0\daniel-project0\redrobin\RedRobin.Library\Models\Customers.csutf-8X
+OC:\revature\project0\daniel-project0\redrobin\RedRobin.Library\Models\IngPro.csutf-8f
+]C:\revature\project0\daniel-project0\redrobin\RedRobin.Library\Models\IngredientsInventory.csutf-8X
+OC:\revature\project0\daniel-project0\redrobin\RedRobin.Library\Models\Orders.csutf-8X
+OC:\revature\project0\daniel-project0\redrobin\RedRobin.Library\Models\OrdPro.csutf-8Z
+QC:\revature\project0\daniel-project0\redrobin\RedRobin.Library\Models\Products.csutf-8X
+OC:\revature\project0\daniel-project0\redrobin\RedRobin.Library\Models\ResPro.csutf-8\
+SC:\revature\project0\daniel-project0\redrobin\RedRobin.Library\Models\Restaurant.csutf-8Y
+PC:\revature\project0\daniel-project0\redrobin\RedRobin.Library\Models\RestIng.csutf-8^
+UC:\revature\project0\daniel-project0\redrobin\RedRobin.Library\SecretConfiguration.csutf-8

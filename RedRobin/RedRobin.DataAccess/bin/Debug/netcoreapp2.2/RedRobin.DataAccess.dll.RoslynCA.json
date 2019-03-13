@@ -1,0 +1,872 @@
+{
+  "$schema": "http://json.schemastore.org/sarif-1.0.0",
+  "version": "1.0.0",
+  "runs": [
+    {
+      "tool": {
+        "name": "Microsoft (R) Visual C# Compiler",
+        "version": "2.10.0.0",
+        "fileVersion": "2.10.0.0 (45b37117)",
+        "semanticVersion": "2.10.0",
+        "language": "en-US"
+      },
+      "results": [
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 36,
+                  "startColumn": 13,
+                  "endLine": 36,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 87,
+                  "startColumn": 13,
+                  "endLine": 87,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 93,
+                  "startColumn": 13,
+                  "endLine": 93,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 101,
+                  "startColumn": 13,
+                  "endLine": 101,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 110,
+                  "startColumn": 13,
+                  "endLine": 110,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 146,
+                  "startColumn": 13,
+                  "endLine": 146,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 157,
+                  "startColumn": 13,
+                  "endLine": 157,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 167,
+                  "startColumn": 13,
+                  "endLine": 167,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 175,
+                  "startColumn": 13,
+                  "endLine": 175,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 197,
+                  "startColumn": 13,
+                  "endLine": 197,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 246,
+                  "startColumn": 13,
+                  "endLine": 246,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 261,
+                  "startColumn": 13,
+                  "endLine": 261,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 270,
+                  "startColumn": 13,
+                  "endLine": 270,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 280,
+                  "startColumn": 13,
+                  "endLine": 280,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 287,
+                  "startColumn": 13,
+                  "endLine": 287,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 295,
+                  "startColumn": 13,
+                  "endLine": 295,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 313,
+                  "startColumn": 13,
+                  "endLine": 313,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 324,
+                  "startColumn": 13,
+                  "endLine": 324,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 333,
+                  "startColumn": 13,
+                  "endLine": 333,
+                  "endColumn": 81
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 340,
+                  "startColumn": 13,
+                  "endLine": 340,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 349,
+                  "startColumn": 13,
+                  "endLine": 349,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 358,
+                  "startColumn": 13,
+                  "endLine": 358,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 367,
+                  "startColumn": 13,
+                  "endLine": 367,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 376,
+                  "startColumn": 13,
+                  "endLine": 376,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 385,
+                  "startColumn": 13,
+                  "endLine": 385,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 399,
+                  "startColumn": 13,
+                  "endLine": 399,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 412,
+                  "startColumn": 13,
+                  "endLine": 412,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 424,
+                  "startColumn": 13,
+                  "endLine": 424,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 452,
+                  "startColumn": 13,
+                  "endLine": 452,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S125",
+          "level": "warning",
+          "message": "Remove this commented out code.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 468,
+                  "startColumn": 13,
+                  "endLine": 468,
+                  "endColumn": 57
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'customer' to 'restaurant' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 99,
+                  "startColumn": 50,
+                  "endLine": 99,
+                  "endColumn": 58
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'IngID' to 'ingID' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 155,
+                  "startColumn": 86,
+                  "endLine": 155,
+                  "endColumn": 91
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'restIng' to 'restIngredient' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 195,
+                  "startColumn": 60,
+                  "endLine": 195,
+                  "endColumn": 67
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'restIng' to 'restIngredient' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 204,
+                  "startColumn": 63,
+                  "endLine": 204,
+                  "endColumn": 70
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'product' to 'burger' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 244,
+                  "startColumn": 48,
+                  "endLine": 244,
+                  "endColumn": 55
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'ingPro' to 'ingProduct' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 293,
+                  "startColumn": 56,
+                  "endLine": 293,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'resPro' to 'resProducts' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 311,
+                  "startColumn": 56,
+                  "endLine": 311,
+                  "endColumn": 62
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'ingPro' to 'ingProduct' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 302,
+                  "startColumn": 59,
+                  "endLine": 302,
+                  "endColumn": 65
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        },
+        {
+          "ruleId": "S927",
+          "level": "warning",
+          "message": "Rename parameter 'restID' to 'RestID' to match the interface declaration.",
+          "locations": [
+            {
+              "resultFile": {
+                "uri": "file:///C:/revature/project0/daniel-project0/redrobin/RedRobin.DataAccess/Repositories/RedRobinRepo.cs",
+                "region": {
+                  "startLine": 338,
+                  "startColumn": 71,
+                  "endLine": 338,
+                  "endColumn": 77
+                }
+              }
+            }
+          ],
+          "properties": {
+            "warningLevel": 1
+          }
+        }
+      ],
+      "rules": {
+        "S125": {
+          "id": "S125",
+          "shortDescription": "Sections of code should not be commented out",
+          "fullDescription": "Programmers should not comment out code as it bloats programs and reduces readability.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-125",
+          "properties": {
+            "category": "Major Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        },
+        "S927": {
+          "id": "S927",
+          "shortDescription": "parameter names should match base declaration and other partial definitions",
+          "fullDescription": "The name of a parameter in an externally visible method override does not match the name of the parameter in the base declaration of the method, or the name of the parameter in the interface declaration of the method or the name of any other partial definition.",
+          "defaultLevel": "warning",
+          "helpUri": "https://rules.sonarsource.com/csharp/RSPEC-927",
+          "properties": {
+            "category": "Critical Code Smell",
+            "isEnabledByDefault": true,
+            "tags": [
+              "C#",
+              "SonarWay",
+              "MainSourceScope",
+              "TestSourceScope"
+            ]
+          }
+        }
+      }
+    }
+  ]
+}

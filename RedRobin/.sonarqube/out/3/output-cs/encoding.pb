@@ -1,0 +1,15 @@
+d
+[C:\revature\project0\daniel-project0\redrobin\RedRobin.WebApp\Controllers\HomeController.csutf-8j
+aC:\revature\project0\daniel-project0\redrobin\RedRobin.WebApp\Controllers\IngredientController.csutf-8e
+\C:\revature\project0\daniel-project0\redrobin\RedRobin.WebApp\Controllers\OrderController.csutf-8g
+^C:\revature\project0\daniel-project0\redrobin\RedRobin.WebApp\Controllers\ProductController.csutf-8j
+aC:\revature\project0\daniel-project0\redrobin\RedRobin.WebApp\Controllers\RestaurantController.csutf-8j
+aC:\revature\project0\daniel-project0\redrobin\RedRobin.WebApp\Controllers\StatisticsController.csutf-8_
+VC:\revature\project0\daniel-project0\redrobin\RedRobin.WebApp\Models\ErrorViewModel.csutf-8[
+RC:\revature\project0\daniel-project0\redrobin\RedRobin.WebApp\Models\Ingredient.csutf-8W
+NC:\revature\project0\daniel-project0\redrobin\RedRobin.WebApp\Models\Orders.csutf-8X
+OC:\revature\project0\daniel-project0\redrobin\RedRobin.WebApp\Models\Product.csutf-8[
+RC:\revature\project0\daniel-project0\redrobin\RedRobin.WebApp\Models\Restaurant.csutf-8[
+RC:\revature\project0\daniel-project0\redrobin\RedRobin.WebApp\Models\Statistics.csutf-8Q
+HC:\revature\project0\daniel-project0\redrobin\RedRobin.WebApp\Program.csutf-8Q
+HC:\revature\project0\daniel-project0\redrobin\RedRobin.WebApp\Startup.csutf-8
